@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom
+@import "scss/custom/reboot";
+@import "scss/custom/helper";
+@import "scss/custom/navbar";
+@import "scss/custom/gallery";
