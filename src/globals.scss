@@ -7,3 +7,10 @@
 @import "scss/custom/helper";
 @import "scss/custom/navbar";
 @import "scss/custom/gallery";
+
+.mc-select__input:focus {
+  box-shadow: none;
+}
+.mc-select__placeholder {
+  color: red !important;
+}
