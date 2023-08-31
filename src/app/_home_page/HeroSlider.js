@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
+import { Autoplay } from "swiper";
 
 export default () => {
   return (
@@ -16,7 +17,12 @@ export default () => {
         data-aos="fade-left"
         data-aos-duration={1000}
       >
-        <Swiper slidesPerView={1} loop={true} autoplay={true}>
+        <Swiper
+          slidesPerView={1}
+          loop={true}
+          autoplay={{ delay: 3000 }}
+          modules={[Autoplay]}
+        >
           <SwiperSlide>
             <img
               src="assets/images/demo/home-app.jpg"

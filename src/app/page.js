@@ -11,8 +11,8 @@ export default function Home() {
     <>
       <HeroSection />
       <PopularCategorySection />
-      <NearestHospitalSection />
       <PopularDoctorsSection />
+      <NearestHospitalSection />
       <HealthTipsSection />
       <TestimonialSection />
       <WhoWeAreSection />

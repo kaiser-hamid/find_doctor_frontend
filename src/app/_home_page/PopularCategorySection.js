@@ -17,7 +17,7 @@ export default () => {
       <div className="container">
         <div className="text-center">
           <h1 className="text-3xl/tight font-medium mt-3 mb-4">
-            Popular categories
+            Dive into categories
           </h1>
         </div>
         <div className="mt-14">

@@ -35,7 +35,7 @@ export const NAV_MENUS = [
     dropdown: [],
   },
   {
-    label: "Abous us",
+    label: "About us",
     href: "/about-us",
     hasDropdown: false,
     dropdownTarget: null,
