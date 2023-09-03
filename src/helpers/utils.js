@@ -7,15 +7,8 @@ export const NAV_MENUS = [
     dropdown: [],
   },
   {
-    label: "Category",
-    href: "/category",
-    hasDropdown: false,
-    dropdownTarget: null,
-    dropdown: [],
-  },
-  {
-    label: "Chamber",
-    href: "/chamber",
+    label: "Chambers",
+    href: "/chambers",
     hasDropdown: false,
     dropdownTarget: null,
     dropdown: [],

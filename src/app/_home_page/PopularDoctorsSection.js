@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
+import "swiper/swiper-bundle.min.css";
+
 export default () => {
   return (
     <section className="relative pb-36 bg-gradient-to-t from-slate-500/10">
@@ -16,12 +18,26 @@ export default () => {
         </div>
         <Swiper
           autoplay={{ delay: 3000, disableOnInteraction: false }}
+          slidesPerView={3}
+          spaceBetween={50}
           pagination={{
             clickable: true,
           }}
-          spaceBetween={50}
-          slidesPerView={3}
-          rewind={true}
+          loop={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }}
           modules={[Autoplay]}
           className="ms-popular-doctor"
         >
