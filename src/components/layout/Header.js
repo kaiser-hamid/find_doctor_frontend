@@ -1,11 +1,14 @@
 "use client";
 import { useEffect, useState } from "react";
-import { FaArrowUp, FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
+import { FaArrowUp, FaBars, FaTimes } from "react-icons/fa";
 import "@frostui/tailwindcss";
 import Link from "next/link";
 import { NAV_MENUS } from "@/helpers/utils";
+import { useLocale } from "next-intl";
+import ChangeLocaleButton from "../ui/ChangeLocaleButton";
 
 export default () => {
+  const locale = useLocale();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -59,7 +62,7 @@ export default () => {
                 {NAV_MENUS.map((nav, i) => (
                   <li key={i} className="nav-item">
                     <Link className="nav-link" href={nav.href}>
-                      {nav.label}
+                      {nav.label[locale]}
                     </Link>
                   </li>
                 ))}
@@ -68,13 +71,7 @@ export default () => {
 
             {/* Download Button */}
             <div className="hidden lg:flex items-center ms-3">
-              <Link
-                href="http://www.google.com"
-                target="_blank"
-                className="bg-primary text-white px-4 py-2 rounded inline-flex items-center text-sm"
-              >
-                Shastonews
-              </Link>
+              <ChangeLocaleButton />
             </div>
 
             {/* Moblie Menu Toggle Button (Offcanvas Button) */}
@@ -120,7 +117,7 @@ export default () => {
               {NAV_MENUS.map((nav, i) => (
                 <li key={i} className="nav-item">
                   <Link href={nav.href} className="nav-link">
-                    {nav.label}
+                    {nav.label[locale]}
                   </Link>
                 </li>
               ))}
@@ -128,13 +125,23 @@ export default () => {
           </div>
           {/* Mobile Menu Download Button (Footer) */}
           <div className="p-6 flex items-center justify-center">
-            <Link
-              href="http://www.google.com"
-              target="_blank"
-              className="bg-primary w-full text-white p-3 rounded flex items-center justify-center text-sm"
-            >
-              Shastonews
-            </Link>
+            {locale === "bn" ? (
+              <Link
+                locale="en"
+                href="/"
+                className="bg-primary w-full text-white p-3 rounded flex items-center justify-center text-sm"
+              >
+                English
+              </Link>
+            ) : (
+              <Link
+                locale="bn"
+                href="/"
+                className="bg-primary w-full text-white p-3 rounded flex items-center justify-center text-sm"
+              >
+                বাংলা
+              </Link>
+            )}
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 "use client";
-import SelectWithSearch from "@/components/ui/SelectWithSearch";
+import SelectWithSearch from "../../../components/ui/SelectWithSearch";
 import { useState } from "react";
-import { doctorSpecialityOption } from "../../helpers/form-helper";
+import { doctorSpecialityOption } from "../../../helpers/form-helper";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 
