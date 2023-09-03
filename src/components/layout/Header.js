@@ -125,23 +125,7 @@ export default () => {
           </div>
           {/* Mobile Menu Download Button (Footer) */}
           <div className="p-6 flex items-center justify-center">
-            {locale === "bn" ? (
-              <Link
-                locale="en"
-                href="/"
-                className="bg-primary w-full text-white p-3 rounded flex items-center justify-center text-sm"
-              >
-                English
-              </Link>
-            ) : (
-              <Link
-                locale="bn"
-                href="/"
-                className="bg-primary w-full text-white p-3 rounded flex items-center justify-center text-sm"
-              >
-                বাংলা
-              </Link>
-            )}
+            {<ChangeLocaleButton />}
           </div>
         </div>
       </div>
