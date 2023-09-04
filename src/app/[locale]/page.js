@@ -4,7 +4,7 @@ import NearestHospitalSection from "./_home_page/NearestHospitalSection";
 import PopularCategorySection from "./_home_page/PopularCategorySection";
 import PopularDoctorsSection from "./_home_page/PopularDoctorsSection";
 import TestimonialSection from "./_home_page/TestimonialSection";
-import WhoWeAreSection from "./_home_page/WhoWeAreSection";
+import OurResource from "./_home_page/OurResource";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <NearestHospitalSection />
       <HealthTipsSection />
       <TestimonialSection />
-      <WhoWeAreSection />
+      <OurResource />
     </>
   );
 }

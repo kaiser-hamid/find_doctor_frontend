@@ -6,6 +6,7 @@ import { Autoplay } from "swiper";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
 import "swiper/swiper-bundle.min.css";
+import Doctor from "@/components/cards/Doctor";
 
 export default () => {
   return (
@@ -42,149 +43,22 @@ export default () => {
           className="ms-popular-doctor"
         >
           <SwiperSlide>
-            <div className="flex flex-col justify-between border border-gray-300 p-4 bg-white rounded-lg min-h-[380px] hover:shadow-lg transition duration-150">
-              <div>
-                <div className="flex items-center justify-center px-20 py-4">
-                  <Image
-                    width={500}
-                    height={500}
-                    src="/assets/images/avatars/img-2.jpg"
-                    alt="Doctor image"
-                    className="rounded-full h-36 w-36 border border-gray-300 p-1"
-                  />
-                </div>
-                <div className="text-center py-4">
-                  <h2 className="text-xl mb-3">Dr Nowrin Khan</h2>
-                  <p>Medical Executive</p>
-                  <p>MBBS, BCS, FFC(UK)</p>
-                </div>
-              </div>
-
-              <div className="flex justify-end px-4">
-                <Link
-                  href={`/doctors/uuid`}
-                  className="text-primary hover:underline text-xs font-semibold transition duration-250"
-                >
-                  View details <FaArrowAltCircleUp className="inline-block" />
-                </Link>
-              </div>
-            </div>
+            <Doctor />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-between border border-gray-300 p-4 bg-white rounded-lg min-h-[380px] hover:shadow-lg transition duration-150">
-              <div>
-                <div className="flex items-center justify-center px-20 py-4">
-                  <Image
-                    width={500}
-                    height={500}
-                    src="/assets/images/avatars/img-2.jpg"
-                    alt="Doctor image"
-                    className="rounded-full h-36 w-36 border border-gray-300 p-1"
-                  />
-                </div>
-                <div className="text-center py-4">
-                  <h2 className="text-xl mb-3">Dr Nowrin Khan</h2>
-                  <p>Medical Executive</p>
-                  <p>MBBS, BCS, FFC(UK)</p>
-                </div>
-              </div>
-
-              <div className="flex justify-end px-4">
-                <Link
-                  href={`/doctors/uuid`}
-                  className="text-primary hover:underline text-xs font-semibold transition duration-250"
-                >
-                  View details <FaArrowAltCircleUp className="inline-block" />
-                </Link>
-              </div>
-            </div>
+            <Doctor />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-between border border-gray-300 p-4 bg-white rounded-lg min-h-[380px] hover:shadow-lg transition duration-150">
-              <div>
-                <div className="flex items-center justify-center px-20 py-4">
-                  <Image
-                    width={500}
-                    height={500}
-                    src="/assets/images/avatars/img-2.jpg"
-                    alt="Doctor image"
-                    className="rounded-full h-36 w-36 border border-gray-300 p-1"
-                  />
-                </div>
-                <div className="text-center py-4">
-                  <h2 className="text-xl mb-3">Dr Nowrin Khan</h2>
-                  <p>Medical Executive</p>
-                  <p>MBBS, BCS, FFC(UK)</p>
-                </div>
-              </div>
-
-              <div className="flex justify-end px-4">
-                <Link
-                  href={`/doctors/uuid`}
-                  className="text-primary hover:underline text-xs font-semibold transition duration-250"
-                >
-                  View details <FaArrowAltCircleUp className="inline-block" />
-                </Link>
-              </div>
-            </div>
+            <Doctor />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-between border border-gray-300 p-4 bg-white rounded-lg min-h-[380px] hover:shadow-lg transition duration-150">
-              <div>
-                <div className="flex items-center justify-center px-20 py-4">
-                  <Image
-                    width={500}
-                    height={500}
-                    src="/assets/images/avatars/img-2.jpg"
-                    alt="Doctor image"
-                    className="rounded-full h-36 w-36 border border-gray-300 p-1"
-                  />
-                </div>
-                <div className="text-center py-4">
-                  <h2 className="text-xl mb-3">Dr Nowrin Khan</h2>
-                  <p>Medical Executive</p>
-                  <p>MBBS, BCS, FFC(UK)</p>
-                </div>
-              </div>
-
-              <div className="flex justify-end px-4">
-                <Link
-                  href={`/doctors/uuid`}
-                  className="text-primary hover:underline text-xs font-semibold transition duration-250"
-                >
-                  View details <FaArrowAltCircleUp className="inline-block" />
-                </Link>
-              </div>
-            </div>
+            <Doctor />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-between border border-gray-300 p-4 bg-white rounded-lg min-h-[380px] hover:shadow-lg transition duration-150">
-              <div>
-                <div className="flex items-center justify-center px-20 py-4">
-                  <Image
-                    width={500}
-                    height={500}
-                    src="/assets/images/avatars/img-2.jpg"
-                    alt="Doctor image"
-                    className="rounded-full h-36 w-36 border border-gray-300 p-1"
-                  />
-                </div>
-                <div className="text-center py-4">
-                  <h2 className="text-xl mb-3">Dr Nowrin Khan</h2>
-                  <p>Medical Executive</p>
-                  <p>MBBS, BCS, FFC(UK)</p>
-                </div>
-              </div>
-
-              <div className="flex justify-end px-4">
-                <Link
-                  href={`/doctors/uuid`}
-                  className="text-primary hover:underline text-xs font-semibold transition duration-250"
-                >
-                  View details <FaArrowAltCircleUp className="inline-block" />
-                </Link>
-              </div>
-            </div>
+            <Doctor />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Doctor />
           </SwiperSlide>
         </Swiper>
       </div>
