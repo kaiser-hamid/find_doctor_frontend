@@ -9,7 +9,10 @@ import {
 
 export default () => {
   return (
-    <section className="py-20 bg-primary/10 relative" data-aos="fade-up">
+    <section
+      className="py-14 md:py-20 bg-primary/10 relative"
+      data-aos="fade-up"
+    >
       <div className="absolute top-0 inset-x-0 hidden sm:block">
         <img
           src="assets/images/shapes/white-wave.svg"

@@ -1,10 +1,10 @@
 export default () => {
   return (
-    <section className="lg:py-24 py-16">
+    <section className="lg:py-24 sm:py-16 py-4">
       <div className="container" data-aos="fade-up">
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-10">
           <div className="flex flex-col items-center lg:items-start">
-            <div className="border-t-2 border-gray-300 w-1/5 mb-7" />
+            <div className="lg:border-t-2 lg:border-gray-300 w-1/5 mb-7" />
             <h1 className="text-3xl">About Us</h1>
           </div>
           <div>

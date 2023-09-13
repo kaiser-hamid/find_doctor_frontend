@@ -21,7 +21,7 @@ export default function ChamberSection() {
     });
   };
   return (
-    <section class="py-20">
+    <section class="sm:py-12 lg:py-20">
       <div class="container">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-8 mt-16">
           <div class="border rounded p-6 bg-teal-100" data-aos="fade-up">

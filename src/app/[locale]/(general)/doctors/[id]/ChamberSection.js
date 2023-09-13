@@ -1,10 +1,16 @@
-import { FaHospital, FaStethoscope } from "react-icons/fa";
+"use client";
+import { copyTextOnClicked } from "@/helpers/utils";
+import { useState } from "react";
+import { FaCopy, FaStethoscope } from "react-icons/fa";
 
 export default () => {
+  const [copiedText, setCopiedText] = useState("");
+
   return (
     <section className="pb-20">
       <div className="container">
-        <div className="px-8 lg:px-24">
+        <h2 className="text-green-500">{copiedText}</h2>
+        <div className="px-4 sm:px-16 lg:px-24">
           <ol className="relative border-l border-gray-200 dark:border-gray-700">
             <li className="mb-10 ml-6">
               <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -26,9 +32,11 @@ export default () => {
                 </a>
                 <button
                   type="button"
-                  className="border border-gray-300 bg-gray-100 rounded text-xs py-1 font-thin px-2"
+                  onClick={copyTextOnClicked}
+                  data-text_to_be_copied="+8801818786756-1"
+                  className="flex gap-1 justify-center items-center border border-gray-300 bg-gray-700 hover:bg-gray-800 transition duration-150 text-white rounded text-xs py-1 font-thin px-2"
                 >
-                  Copy
+                  <FaCopy /> Copy
                 </button>
               </p>
               <button
@@ -59,9 +67,11 @@ export default () => {
                 </a>
                 <button
                   type="button"
-                  className="border border-gray-300 bg-gray-100 rounded text-xs py-1 font-thin px-2"
+                  onClick={copyTextOnClicked}
+                  data-text_to_be_copied="+8801818786756-2"
+                  className="flex gap-1 justify-center items-center border border-gray-300 bg-gray-700 hover:bg-gray-800 transition duration-150 text-white rounded text-xs py-1 font-thin px-2"
                 >
-                  Copy
+                  <FaCopy /> Copy
                 </button>
               </p>
               <button
@@ -92,9 +102,11 @@ export default () => {
                 </a>
                 <button
                   type="button"
-                  className="border border-gray-300 bg-gray-100 rounded text-xs py-1 font-thin px-2"
+                  onClick={copyTextOnClicked}
+                  data-text_to_be_copied="+8801818786756-3"
+                  className="flex gap-1 justify-center items-center border border-gray-300 bg-gray-700 hover:bg-gray-800 transition duration-150 text-white rounded text-xs py-1 font-thin px-2"
                 >
-                  Copy
+                  <FaCopy /> Copy
                 </button>
               </p>
               <button

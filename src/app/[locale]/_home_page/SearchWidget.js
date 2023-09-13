@@ -20,34 +20,36 @@ export default () => {
 
   return (
     <>
-      <div className="my-8">
-        <label>Doctor name</label>
-        <input
-          type="text"
-          name="name"
-          className="w-full form-input pe-10 text-sm font-medium focus:ring-0 focus:border-slate-500 rounded border-slate-400"
-        />
-      </div>
-      <div className="flex flex-col md:flex-row gap-2">
-        <div className="w-full">
-          <label>Speciality</label>
-          <SelectWithSearch
-            name="speciality"
-            value={searchInput.speciality}
-            onChange={handleInputChange}
-            options={doctorSpecialityOption}
-            placeholderText="Type speciality.."
+      <div className="grid grid-cols-2 gap-4">
+        <div className="col-span-2">
+          <input
+            type="text"
+            name="name"
+            className="w-full form-input pe-10 text-sm font-medium focus:ring-0 focus:border-slate-500 rounded border-slate-400 placeholder-gray-300"
+            placeholder="Type doctor name.."
           />
         </div>
-        <div className="w-full">
-          <label>Chamber</label>
-          <SelectWithSearch
-            name="chamber"
-            value={searchInput.chamber}
-            onChange={handleInputChange}
-            options={doctorSpecialityOption}
-            placeholderText="Type chamber.."
-          />
+        <div className="col-span-2 md:col-span-1">
+          <div className="w-full">
+            <SelectWithSearch
+              name="speciality"
+              value={searchInput.speciality}
+              onChange={handleInputChange}
+              options={doctorSpecialityOption}
+              placeholderText="Type or select speciality.."
+            />
+          </div>
+        </div>
+        <div className="col-span-2 md:col-span-1">
+          <div className="w-full">
+            <SelectWithSearch
+              name="chamber"
+              value={searchInput.chamber}
+              onChange={handleInputChange}
+              options={doctorSpecialityOption}
+              placeholderText="Type or select chamber.."
+            />
+          </div>
         </div>
       </div>
       <div className="flex flex-wrap items-center gap-5 mt-10">

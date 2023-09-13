@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { FaArrowUp, FaBars, FaTimes } from "react-icons/fa";
 import "@frostui/tailwindcss";
 import Link from "next/link";
-import { NAV_MENUS } from "@/helpers/utils";
+import { NAV_MENUS } from "@/helpers/data-helper";
 import { useLocale } from "next-intl";
 import ChangeLocaleButton from "../ui/ChangeLocaleButton";
 

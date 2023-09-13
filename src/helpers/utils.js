@@ -1,37 +1,14 @@
-export const NAV_MENUS = [
-  {
-    label: { en: "Home", bn: "হোম" },
-    href: "/",
-    hasDropdown: false,
-    dropdownTarget: null,
-    dropdown: [],
-  },
-  {
-    label: { en: "Chambers", bn: "চেম্বার" },
-    href: "/chambers",
-    hasDropdown: false,
-    dropdownTarget: null,
-    dropdown: [],
-  },
-  {
-    label: { en: "Shasto Jiggasha", bn: "স্বাস্থ্য জিজ্ঞাসা" },
-    href: "/qna",
-    hasDropdown: false,
-    dropdownTarget: null,
-    dropdown: [],
-  },
-  {
-    label: { en: "Blog", bn: "ব্লগ" },
-    href: "/blog",
-    hasDropdown: false,
-    dropdownTarget: null,
-    dropdown: [],
-  },
-  {
-    label: { en: "About us", bn: "আমাদের সম্পর্কে" },
-    href: "/about-us",
-    hasDropdown: false,
-    dropdownTarget: null,
-    dropdown: [],
-  },
-];
+import Swal from "sweetalert2";
+
+export const copyTextOnClicked = async (e) => {
+  const { text_to_be_copied } = e.currentTarget.dataset;
+  await navigator.clipboard.writeText(text_to_be_copied);
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Copied!",
+    timer: 1000,
+    showConfirmButton: false,
+    timerProgressBar: true,
+  });
+};

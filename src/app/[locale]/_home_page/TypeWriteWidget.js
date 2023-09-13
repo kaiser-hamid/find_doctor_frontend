@@ -1,12 +1,20 @@
+"use client";
+import { Typewriter } from "react-simple-typewriter";
 export default () => {
   return (
     <div className="mb-7">
-      <h1 className="md:text-5xl/tight text-3xl font-semibold text-gray-700 py-2">
+      <h1 className="md:text-6xl/tight text-4xl font-semibold text-gray-700 py-2">
         Welcome,
       </h1>
-      <h2 className="inline-block text-lg md:text-4xl w-max">
-        <span className="inline-block animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-gray-500 pr-5 text-gray-500 font-bold">
-          Find your doctor here..
+      <h2 className="inline-block text-xl md:text-3xl w-max">
+        Find your doctor by
+        <span className="text-primary">
+          {" "}
+          <Typewriter
+            cursor={true}
+            loop={false}
+            words={["doctor name", "chamber", "speciality", "location"]}
+          />
         </span>
       </h2>
     </div>

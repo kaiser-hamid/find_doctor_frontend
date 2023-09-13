@@ -14,7 +14,7 @@ export default function SelectWithSearch({
 
   const handleGetValue = () => {
     const valueForSet = options.find((item) => item.value === value);
-    return valueForSet || { id: "", label: "", value: "" };
+    return valueForSet || null;
   };
 
   const Option = (props) =>
@@ -30,24 +30,12 @@ export default function SelectWithSearch({
         </p>
       </components.Option>
     );
-
-  /* return (
-    <Select
-      classNames={{
-        indicatorsContainer: (state) => "py-1.5",
-        input: (state) => "px-2",
-        menu: (state) => "px-2",
-        placeholder: (state) => "px-2",
-        singleValue: (state) => "px-2",
-      }}
-      onChange={handleChangeInput}
-      options={options}
-      value={handleGetValue()}
-      components={{ Option }}
-      className="w-full"
-    />
+  const mizan = (props) => (
+    <components.Menu>
+      <div className="bg-red-400">habifasjkdfhaksjd</div>
+    </components.Menu>
   );
-   */
+
   const customStyles = {
     control: (provided, state) => ({
       ...provided,
@@ -72,7 +60,6 @@ export default function SelectWithSearch({
       color: "rgb(100 116 139)",
     }),
   };
-
   return (
     <Select
       onChange={handleChangeInput}
@@ -86,7 +73,7 @@ export default function SelectWithSearch({
       styles={customStyles}
       className="w-full"
       classNamePrefix="mc-select"
-      placeholder="Type here.."
+      placeholder={placeholderText}
     />
   );
 }

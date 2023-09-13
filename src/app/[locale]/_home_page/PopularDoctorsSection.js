@@ -26,11 +26,11 @@ export default () => {
           }}
           loop={true}
           breakpoints={{
-            640: {
+            320: {
               slidesPerView: 1,
-              spaceBetween: 10,
+              spaceBetween: 30,
             },
-            768: {
+            640: {
               slidesPerView: 2,
               spaceBetween: 30,
             },

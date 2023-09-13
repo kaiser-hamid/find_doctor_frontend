@@ -1,12 +1,12 @@
 import BannerSection from "./BannerSection";
 import DoctorsSection from "./DoctorsSection";
-import TagSection from "./TagSection";
+import SearchSeaction from "./SearchSeaction";
 
 export default function doctors() {
   return (
     <>
       <BannerSection />
-      <TagSection />
+      <SearchSeaction />
       <DoctorsSection />
     </>
   );

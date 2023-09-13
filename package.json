@@ -26,7 +26,9 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
     "react-select": "^5.7.4",
+    "react-simple-typewriter": "^5.0.1",
     "shufflejs": "^6.1.0",
+    "sweetalert2": "^11.7.27",
     "swiper": "^8.4.4",
     "tailwindcss": "3.3.3"
   },
