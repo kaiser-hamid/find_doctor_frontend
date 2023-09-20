@@ -1,4 +1,45 @@
 {
-  "about us": "আমাদের সম্পর্কে",
-  "hello": "স্বাগতম"
+  "general": {
+    "View details": "বিস্তারিত দেখুন",
+    "Explore more": "আরও দেখুন",
+    "explore": "দেখুন",
+    "chambers": "চেম্বার",
+    "doctors": "ডাক্তার",
+    "visitors": "ব্যবহারকারী",
+    "Awards won": "পুরষ্কার বিজয়"
+  },
+  "home": {
+    "typewriter_widget": {
+      "Welcome": "স্বাগতম",
+      "Find your doctor by": "আপনার ডাক্তার খুজুন",
+      "doctor name": "ডাক্তারের নাম দিয়ে",
+      "location": "এরিয়া দিয়ে",
+      "chamber": "চেম্বার দিয়ে"
+    },
+    "search_widget": {
+      "Type doctor name": "ডাক্তারের নাম লিখুন অথবা নির্বাচন করুন",
+      "Type or select speciality": "স্পেশালিটি  লিখুন অথবা নির্বাচন করুন",
+      "Type or select chamber": "চেম্বার লিখুন অথবা নির্বাচন করুন",
+      "Search doctor": "ডাক্তার খুজুন"
+    },
+    "category": {
+      "Dive into categories": "ক্যাটাগরিতে প্রবেশ করুন",
+      "Pediatrics": "পেড্রিয়াট্রিক্স",
+      "Neurology": "নিউরোলোজি",
+      "Obstetrics": "অবস্টেট্রিক্স",
+      "Oncology": "অনকলোজি",
+      "Orthopedics": "অর্থোপেডিক্স",
+      "Urology": "ইউরোলোজি"
+    },
+    "Popular Doctors": "জনপ্রিয় ডাক্তারসমূহ",
+    "Chambers near you": "আপনার নিকটতম চেম্বার সমূহ",
+    "No chamber found near you": "কোন চেম্বার পাওয়া যায়নি।",
+    "Shown popular chambers instead": "পরিবর্তে জনপ্রিয় চেম্বারের তালিকা দেখানো হল",
+    "Some Trendy Tips": "কিছু প্রচলিত টিপস",
+    "Tips": "টিপস",
+    "The benefits that will make you comfort": "যে সুবিধাগুলো আপনার উপকারে আসবে",
+    "Stats": "পরিসংখ্যান",
+    "Our Resources": "আমাদের রিসোর্স সমুহ",
+    "across item countries": "{item}+টি দেশ জুড়ে"
+  }
 }

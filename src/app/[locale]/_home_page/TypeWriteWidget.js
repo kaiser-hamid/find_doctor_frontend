@@ -1,19 +1,19 @@
 "use client";
 import { Typewriter } from "react-simple-typewriter";
-export default () => {
+export default ({ t }) => {
   return (
     <div className="mb-7">
       <h1 className="md:text-6xl/tight text-4xl font-semibold text-gray-700 py-2">
-        Welcome,
+        {t["Welcome"]},
       </h1>
       <h2 className="inline-block text-xl md:text-3xl w-max">
-        Find your doctor by
+        {t["Find your doctor by"]}
         <span className="text-primary">
           {" "}
           <Typewriter
             cursor={true}
             loop={false}
-            words={["doctor name", "chamber", "speciality", "location"]}
+            words={[t["doctor name"], t["location"], t["chamber"]]}
           />
         </span>
       </h2>

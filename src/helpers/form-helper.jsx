@@ -93,30 +93,41 @@ export const chamberFacilityOption = [
 ];
 
 export const doctorSpecialityOption = [
-  { id: "Cardiology", label: "Cardiology", value: "Cardiology" },
-  { id: "Dermatology", label: "Dermatology", value: "Dermatology" },
-  { id: "Endocrinology", label: "Endocrinology", value: "Endocrinology" },
+  {
+    id: "Cardiology",
+    label: { en: "Cardiology", bn: "কার্ডিওলোজি" },
+    value: "Cardiology",
+  },
+  {
+    id: "Dermatology",
+    label: { en: "Dermatology", bn: "ডার্মাটোলোজি" },
+    value: "Dermatology",
+  },
+  {
+    id: "Endocrinology",
+    label: { en: "Endocrinology", bn: "এন্ডোক্রিনোলোজি" },
+    value: "Endocrinology",
+  },
   {
     id: "Gastroenterology",
-    label: "Gastroenterology",
+    label: { en: "Gastroenterology", bn: "গ্যাস্টোন্টারোলোজি" },
     value: "Gastroenterology",
   },
-  { id: "Hematology", label: "Hematology", value: "Hematology" },
-  { id: "Neurology", label: "Neurology", value: "Neurology" },
-  { id: "Ophthalmology", label: "Ophthalmology", value: "Ophthalmology" },
-  { id: "Orthopedics", label: "Orthopedics", value: "Orthopedics" },
-  { id: "Otolaryngology", label: "Otolaryngology", value: "Otolaryngology" },
-  { id: "Pediatrics", label: "Pediatrics", value: "Pediatrics" },
-  { id: "Psychiatry", label: "Psychiatry", value: "Psychiatry" },
-  { id: "Pulmonology", label: "Pulmonology", value: "Pulmonology" },
-  { id: "Radiology", label: "Radiology", value: "Radiology" },
-  { id: "Surgery", label: "Surgery", value: "Surgery" },
-  { id: "Urology", label: "Urology", value: "Urology" },
-  { id: "Obstetrics", label: "Obstetrics", value: "Obstetrics" },
-  { id: "Rheumatology", label: "Rheumatology", value: "Rheumatology" },
-  { id: "Infectious", label: "Infectious", value: "Infectious" },
-  { id: "Oncology", label: "Oncology", value: "Oncology" },
-  { id: "Allergy", label: "Allergy", value: "Allergy" },
+  {
+    id: "Hematology",
+    label: { en: "Hematology", bn: "হেমাটোলোজি" },
+    value: "Hematology",
+  },
+  {
+    id: "Neurology",
+    label: { en: "Neurology", bn: "নিউরোলোজি" },
+    value: "Neurology",
+  },
+  {
+    id: "Ophthalmology",
+    label: { en: "Ophthalmology", bn: "অপ্টামোলোজি" },
+    value: "Ophthalmology",
+  },
 ];
 
 export const doctorQualificationOption = [

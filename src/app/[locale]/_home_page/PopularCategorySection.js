@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import {
   FaBookMedical,
@@ -12,12 +13,13 @@ import {
 } from "react-icons/fa";
 
 export default () => {
+  const t = useTranslations("home.category");
   return (
     <section className="py-12">
       <div className="container">
         <div className="text-center">
           <h1 className="text-3xl/tight font-medium mt-3 mb-4">
-            Dive into categories
+            {t("Dive into categories")}
           </h1>
         </div>
         <div className="mt-14">
@@ -34,7 +36,7 @@ export default () => {
                   </span>
                 </div>
                 <div>
-                  <h6 className="mb-2 font-medium">Pediatrics</h6>
+                  <h6 className="mb-2 font-medium">{t("Pediatrics")}</h6>
                 </div>
               </div>
             </Link>
@@ -50,7 +52,7 @@ export default () => {
                   </span>
                 </div>
                 <div>
-                  <h6 className="mb-2 font-medium">Neurology</h6>
+                  <h6 className="mb-2 font-medium">{t("Neurology")}</h6>
                 </div>
               </div>
             </Link>
@@ -66,7 +68,7 @@ export default () => {
                   </span>
                 </div>
                 <div>
-                  <h6 className="mb-2 font-medium">Obstetrics</h6>
+                  <h6 className="mb-2 font-medium">{t("Obstetrics")}</h6>
                 </div>
               </div>
             </Link>
@@ -82,7 +84,7 @@ export default () => {
                   </span>
                 </div>
                 <div>
-                  <h6 className="mb-2 font-medium">Oncology</h6>
+                  <h6 className="mb-2 font-medium">{t("Oncology")}</h6>
                 </div>
               </div>
             </Link>
@@ -98,7 +100,7 @@ export default () => {
                   </span>
                 </div>
                 <div>
-                  <h6 className="mb-2 font-medium">Orthopedics</h6>
+                  <h6 className="mb-2 font-medium">{t("Orthopedics")}</h6>
                 </div>
               </div>
             </Link>
@@ -114,55 +116,7 @@ export default () => {
                   </span>
                 </div>
                 <div>
-                  <h6 className="mb-2 font-medium">Urology</h6>
-                </div>
-              </div>
-            </Link>
-            <Link href="/doctors?speciality=">
-              <div
-                className="flex gap-6 items-center"
-                data-aos="fade-up"
-                data-aos-duration={600}
-              >
-                <div>
-                  <span className="h-16 w-16 bg-purple-200 rounded-md flex items-center justify-center">
-                    <FaBookMedical className="text-2xl text-purple-400" l />
-                  </span>
-                </div>
-                <div>
-                  <h6 className="mb-2 font-medium">Allergy</h6>
-                </div>
-              </div>
-            </Link>
-            <Link href="/doctors?speciality=">
-              <div
-                className="flex gap-6 items-center"
-                data-aos="fade-up"
-                data-aos-duration={600}
-              >
-                <div>
-                  <span className="h-16 w-16 bg-amber-200 rounded-md flex items-center justify-center">
-                    <FaBriefcaseMedical className="text-2xl text-amber-400" />
-                  </span>
-                </div>
-                <div>
-                  <h6 className="mb-2 font-medium">Psychiatry</h6>
-                </div>
-              </div>
-            </Link>
-            <Link href="/doctors?speciality=">
-              <div
-                className="flex gap-6 items-center"
-                data-aos="fade-up"
-                data-aos-duration={600}
-              >
-                <div>
-                  <span className="h-16 w-16 bg-lime-200 rounded-md flex items-center justify-center">
-                    <FaClinicMedical className="text-2xl text-lime-400" />
-                  </span>
-                </div>
-                <div>
-                  <h6 className="mb-2 font-medium">Hematology</h6>
+                  <h6 className="mb-2 font-medium">{t("Urology")}</h6>
                 </div>
               </div>
             </Link>

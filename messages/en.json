@@ -1,4 +1,45 @@
 {
-  "about us": "About us",
-  "hello": "Hello"
+  "general": {
+    "View details": "View details",
+    "Explore more": "Explore more",
+    "explore": "explore",
+    "chambers": "chambers",
+    "doctors": "doctors",
+    "visitors": "visitors",
+    "Awards won": "awards won"
+  },
+  "home": {
+    "typewriter_widget": {
+      "Welcome": "Welcome",
+      "Find your doctor by": "Find your doctor by",
+      "doctor name": "doctor name",
+      "location": "location",
+      "chamber": "chamber"
+    },
+    "search_widget": {
+      "Type doctor name": "Type doctor name",
+      "Type or select speciality": "Type or select speciality",
+      "Type or select chamber": "Type or select chamber",
+      "Search doctor": "Search doctor"
+    },
+    "category": {
+      "Dive into categories": "Dive into categories",
+      "Pediatrics": "Pediatrics",
+      "Neurology": "Neurology",
+      "Obstetrics": "Obstetrics",
+      "Oncology": "Oncology",
+      "Orthopedics": "Orthopedics",
+      "Urology": "Urology"
+    },
+    "Popular Doctors": "Popular Doctors",
+    "Chambers near you": "Chambers near you",
+    "No chamber found near you": "No chamber found near you.",
+    "Shown popular chambers instead": "Shown popular chambers instead",
+    "Some Trendy Tips": "Some Trendy Tips",
+    "Tips": "Tips",
+    "The benefits that will make you comfort": "The benefits that will make you comfort",
+    "Stats": "Stats",
+    "Our Resources": "Our Resources",
+    "across item countries": "across {item}+ countries"
+  }
 }

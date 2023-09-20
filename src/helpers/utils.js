@@ -12,3 +12,16 @@ export const copyTextOnClicked = async (e) => {
     timerProgressBar: true,
   });
 };
+
+export const RANDCOLORPLATE = [
+  "emerald",
+  "cyan",
+  "blue",
+  "orange",
+  "pink",
+  "red",
+  "purple",
+  "amber",
+  "lime",
+  "indigo",
+];
