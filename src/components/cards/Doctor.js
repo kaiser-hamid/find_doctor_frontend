@@ -30,7 +30,7 @@ export default function Doctor({ t, pageData }) {
 
       <div className="flex justify-end px-4">
         <Link
-          href={`/doctors/uuid`}
+          href={`/doctors/${pageData.id}`}
           className="w-full text-center p-2 rounded border border-primary text-primary hover:text-white hover:bg-primary hover:shadow-sm hover:shadow-primary/50 focus:outline-none focus:outline-primary/50 transition duration-150"
         >
           {t["View details"]} <FaEye className="inline-block" />

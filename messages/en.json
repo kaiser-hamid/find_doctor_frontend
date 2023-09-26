@@ -6,7 +6,18 @@
     "chambers": "chambers",
     "doctors": "doctors",
     "visitors": "visitors",
-    "Awards won": "awards won"
+    "Awards won": "awards won",
+    "Load more": "Load more",
+    "search": "search",
+    "prev": "previous",
+    "next": "next",
+    "Doctor list": "Doctor list",
+    "Dr": "Dr.",
+    "BMDC Reg": "BMDC Reg.",
+    "experience": "experience",
+    "education": "education",
+    "Total Viewed": "Total Viewed",
+    "rating": "ratings"
   },
   "home": {
     "typewriter_widget": {
@@ -41,5 +52,34 @@
     "Stats": "Stats",
     "Our Resources": "Our Resources",
     "across item countries": "across {item}+ countries"
+  },
+  "chambers": {
+    "headline": "Chamber List",
+    "subhead": "Medicine specialist is a medical doctor who diagnose & treat primary condition of any diseases of adults"
+  },
+  "doctor": {
+    "about doctor": "About Dr. {name}",
+    "from time_a to time_b": "From {time_a} to {time_b}",
+    "For serial": "For serial",
+    "Get appointment online": "Get appointment online"
+  },
+  "about_us": {
+    "Who we are": "Who we are",
+    "about us": "About us",
+    "about_us_text": "Welcome to shastobondhu, where we believe that everyone deserves access to quality healthcare. Our mission is to make finding the right doctor in your city a hassle-free and compassionate experience.",
+    "our vision": "Our vision",
+    "our_vision_text": "At shastobondhu, we envision a world where healthcare is accessible to all, regardless of their background or circumstances. We are committed to bridging the gap between individuals in need and the medical professionals who can provide them with the care they deserve.",
+    "what we do": "What we do",
+    "what_we_do_text": "We are a dedicated team of volunteers and healthcare enthusiasts who have come together to create a platform that connects patients with doctors who are ready to lend a helping hand. Whether you're looking for a specialist, a general practitioner, or any other medical professional, we are here to assist you in your search.",
+    "get involved": "Get involved",
+    "get_involved_text": "You can be a part of our mission too! Whether you're a healthcare provider looking to join our network of compassionate professionals or an individual who wants to support our cause, there are many ways to get involved. Together, we can make a difference in the lives of those seeking medical care. Thank you for visiting shastobondhu. We are here to assist you in your healthcare journey, and we look forward to helping you connect with the right doctors in your city.",
+    "Meet our team": "Meet our team",
+    "Our team": "Our team",
+    "Dr Hamid Hossain Azad": "Dr. Hamid Hossain Azad",
+    "CEO": "CEO",
+    "Kaiser Hamid": "Kaiser Hamid",
+    "Developer": "Developer",
+    "Mizanur Rahman": "Mizanur Rahman",
+    "Coordinator": "Coordinator"
   }
 }

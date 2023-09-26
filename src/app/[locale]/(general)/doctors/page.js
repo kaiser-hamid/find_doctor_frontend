@@ -2,12 +2,21 @@ import BannerSection from "./BannerSection";
 import DoctorsSection from "./DoctorsSection";
 import SearchSeaction from "./SearchSeaction";
 
-export default function doctors() {
+//data fetching
+const getPageData = async () => {
+  const res = await fetch("http://localhost:3000/api/doctors");
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+  return res.json();
+};
+export default async function doctors() {
+  const { data: pageData } = await getPageData();
   return (
     <>
       <BannerSection />
       <SearchSeaction />
-      <DoctorsSection />
+      <DoctorsSection doctors={pageData} />
     </>
   );
 }
