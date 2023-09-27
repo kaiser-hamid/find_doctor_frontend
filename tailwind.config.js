@@ -8,6 +8,22 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "node_modules/@frostui/tailwindcss/dist/*.js",
   ],
+  purge: {
+    options: {
+      safelist: [
+        "bg-cyan-500",
+        "bg-blue-500",
+        "bg-orange-500",
+        "bg-pink-500",
+        "bg-red-500",
+        "bg-purple-500",
+        "bg-amber-500",
+        "bg-lime-500",
+        "bg-indigo-500",
+        "bg-emerald-500",
+      ],
+    },
+  },
   darkMode: ["class"],
   theme: {
     container: {

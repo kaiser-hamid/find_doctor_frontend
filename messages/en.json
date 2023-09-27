@@ -61,7 +61,18 @@
     "about doctor": "About Dr. {name}",
     "from time_a to time_b": "From {time_a} to {time_b}",
     "For serial": "For serial",
-    "Get appointment online": "Get appointment online"
+    "Get appointment online": "Get appointment online",
+    "Chambers": "Chambers",
+    "Appointment Schedules": "Appointment Schedules",
+    "weekdays": {
+      "sat": "Sat",
+      "sun": "Sun",
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri"
+    }
   },
   "about_us": {
     "Who we are": "Who we are",

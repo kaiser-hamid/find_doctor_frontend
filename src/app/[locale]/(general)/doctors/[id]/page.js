@@ -17,8 +17,8 @@ export default async ({ params: { id } }) => {
     <>
       <BannerSection />
       <ProfileSummerySection data={pageData} />
-      <AboutDoctor data={pageData} />
       <ChamberSection data={pageData.chambers} />
+      <AboutDoctor data={pageData} />
     </>
   );
 };

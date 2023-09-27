@@ -1,13 +1,22 @@
 import { useLocale, useTranslations } from "next-intl";
 import { FaStethoscope } from "react-icons/fa";
 import CopyToClipboard from "@/components/ui/CopyToClipboard";
+import { RANDCOLORPLATE } from "@/helpers/utils";
 
 export default ({ data }) => {
   const locale = useLocale();
   const t = useTranslations("doctor");
   return (
-    <section className="pb-20">
+    <section className="lg:pb-20 pb-4">
       <div className="container">
+        <div className="text-center my-14">
+          <span className="text-sm bg-primary/10 text-primary rounded-full px-3 py-1">
+            {t("Chambers")}
+          </span>
+          <h1 className="md:text-3xl/tight text-2xl font-medium mt-3">
+            {t("Appointment Schedules")}
+          </h1>
+        </div>
         <div className="px-4 sm:px-16 lg:px-24">
           <ol className="relative border-l border-gray-200 dark:border-gray-700">
             {data?.map((chamber) => (
@@ -21,6 +30,15 @@ export default ({ data }) => {
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   {chamber.location[locale]}
                 </time>
+                <div className="flex items-center flex-wrap gap-2 py-2">
+                  {chamber.week_days?.map((item, i) => (
+                    <p
+                      className={`bg-${RANDCOLORPLATE[i]}-500 shadow-xl border rounded-2xl text-sm text-white font-medium px-4 py-[2px]`}
+                    >
+                      {t(`weekdays.${item}`)}
+                    </p>
+                  ))}
+                </div>
                 <p className="mb-1 text-base font-normal text-gray-500 dark:text-gray-400">
                   {t("from time_a to time_b", {
                     time_a: chamber.schedule.start,

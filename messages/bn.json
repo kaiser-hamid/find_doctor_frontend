@@ -61,7 +61,18 @@
     "about doctor": "ডাঃ {name} সম্পর্কে",
     "from time_a to time_b": "{time_a} হতে {time_b} পর্যন্ত",
     "For serial": "সিরিয়ালের জন্যে",
-    "Get appointment online": "অনলাইনে এপয়েন্টমেন্ট নিন"
+    "Get appointment online": "অনলাইনে এপয়েন্টমেন্ট নিন",
+    "Chambers": "চেম্বার",
+    "Appointment Schedules": "এপয়েন্টমেন্ট শিডিউল",
+    "weekdays": {
+      "sat": "শনি",
+      "sun": "রবি",
+      "mon": "সোম",
+      "tue": "মঙ্গল",
+      "wed": "বুধ",
+      "thu": "বৃহঃ",
+      "fri": "শুক্র"
+    }
   },
   "about_us": {
     "Who we are": "আমাদের সম্পর্কে জানুন",

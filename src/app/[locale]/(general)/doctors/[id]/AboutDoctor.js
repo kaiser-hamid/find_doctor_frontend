@@ -7,7 +7,7 @@ export default ({ data }) => {
     <section className="pb-20">
       <div className="container">
         <div className="mt-8">
-          <div>
+          <div className="text-justify">
             <h3 className="text-2xl">
               {t("about doctor", { name: data.name[locale] })}
             </h3>
