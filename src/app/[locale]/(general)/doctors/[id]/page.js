@@ -5,11 +5,16 @@ import ProfileSummerySection from "./ProfileSummerySection";
 
 //data fetching
 const getPageData = async (id) => {
-  const res = await fetch(`${process.env.API_URL}/doctors/${id}`);
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
+  try {
+    const res = await fetch(`${process.env.API_URL}/doctors/${id}`);
+    if (!res.ok) {
+      throw Error("Failed to fetch data");
+    }
+    return res.json();
+  } catch (e) {
+    console.log(e.message);
+    return [];
   }
-  return res.json();
 };
 export default async function page({ params: { id } }) {
   const { data: pageData, status } = await getPageData(id);

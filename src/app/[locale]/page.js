@@ -8,11 +8,16 @@ import OurResource from "./_home_page/OurResource";
 
 //data fetching
 const getPageData = async () => {
-  const res = await fetch(`${process.env.API_URL}/init-home-page`);
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
+  try {
+    const res = await fetch(`${process.env.API_URL}/init-home-page`);
+    if (!res.ok) {
+      throw Error("Failed to fetch data");
+    }
+    return res.json();
+  } catch (e) {
+    console.log(e.message);
+    return [];
   }
-  return res.json();
 };
 
 export default async function page() {
