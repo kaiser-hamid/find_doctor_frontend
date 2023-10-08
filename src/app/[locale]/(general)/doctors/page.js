@@ -4,7 +4,7 @@ import SearchSeaction from "./SearchSeaction";
 
 //data fetching
 const getPageData = async () => {
-  const res = await fetch("http://localhost:3000/api/doctors");
+  const res = await fetch(`${process.env.API_URL}/doctors`);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }

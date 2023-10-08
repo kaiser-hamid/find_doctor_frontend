@@ -3,7 +3,7 @@ import ChamberSection from "./ChamberSection";
 
 //data fetching
 const getPageData = async () => {
-  const res = await fetch("http://localhost:3000/api/chambers");
+  const res = await fetch(`${process.env.API_URL}/chambers`);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }

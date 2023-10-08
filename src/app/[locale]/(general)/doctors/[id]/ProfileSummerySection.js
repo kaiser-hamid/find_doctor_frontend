@@ -33,14 +33,14 @@ export default ({ data }) => {
           <div className="w-full py-4">
             <div className="border-l-8 border-l-teal-500 pl-8 h-14 capitalize">
               <p>{t("experience")}</p>
-              <h4>{data.experience[locale]}</h4>
+              <h4>{data.experience} year(s) of experience</h4>
             </div>
           </div>
 
           <div className="w-full py-4">
             <div className="border-l-8 border-l-yellow-500 pl-8 h-14">
               <p>{t("education")}</p>
-              <h4>{data.education.join(", ")}</h4>
+              <h4></h4>
             </div>
           </div>
           <div className="w-full py-4">

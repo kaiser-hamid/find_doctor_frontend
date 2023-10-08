@@ -5,7 +5,7 @@ import ProfileSummerySection from "./ProfileSummerySection";
 
 //data fetching
 const getPageData = async (id) => {
-  const res = await fetch(`http://localhost:3000/api/doctors/${id}`);
+  const res = await fetch(`${process.env.API_URL}/doctors/${id}`);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
@@ -16,9 +16,9 @@ export default async ({ params: { id } }) => {
   return (
     <>
       <BannerSection />
-      <ProfileSummerySection data={pageData} />
+      {/* <ProfileSummerySection data={pageData} />
       <ChamberSection data={pageData.chambers} />
-      <AboutDoctor data={pageData} />
+      <AboutDoctor data={pageData} /> */}
     </>
   );
 };
