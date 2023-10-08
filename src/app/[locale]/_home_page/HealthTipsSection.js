@@ -38,8 +38,8 @@ export default function HealthTipsSection({ tips }) {
           </p>
         </div>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-16">
-          {tips?.map((item) => (
-            <div className="bg-white p-6 rounded">
+          {tips?.map((item, i) => (
+            <div key={i} className="bg-white p-6 rounded">
               <div className="flex gap-5">
                 <div>
                   <div className="flex justify-center items-center bg-yellow-50 rounded-md w-12 h-12">

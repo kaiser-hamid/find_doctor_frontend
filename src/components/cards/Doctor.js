@@ -20,8 +20,8 @@ export default function Doctor({ t, pageData }) {
         <div className="text-center py-4">
           <h2 className="text-xl mb-3">{pageData.name[locale]}</h2>
           <ul className="font-semibold">
-            {pageData.speciality?.map((item) => (
-              <li>{item}</li>
+            {pageData.speciality?.map((item, i) => (
+              <li key={i}>{item}</li>
             ))}
           </ul>
           {pageData.education?.join(", ")}

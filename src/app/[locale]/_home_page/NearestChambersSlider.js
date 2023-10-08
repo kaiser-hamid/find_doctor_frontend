@@ -47,8 +47,8 @@ export default function NearestChambersSlider({ t, nearest_chambers }) {
         }}
         modules={[Navigation]}
       >
-        {nearest_chambers?.map((item) => (
-          <SwiperSlide>
+        {nearest_chambers?.map((item, i) => (
+          <SwiperSlide key={i}>
             <div className="border rounded-md p-8">
               <h1 className="text-xl mb-3">{item.name[locale]}</h1>
               <p className="text-gray-400">{item.area[locale]} </p>

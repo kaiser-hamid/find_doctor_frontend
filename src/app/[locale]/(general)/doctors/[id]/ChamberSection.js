@@ -19,8 +19,8 @@ export default function ChamberSection({ data }) {
         </div>
         <div className="px-4 sm:px-16 lg:px-24">
           <ol className="relative border-l border-gray-200 dark:border-gray-700">
-            {data?.map((chamber) => (
-              <li className="mb-10 ml-6">
+            {data?.map((chamber, i) => (
+              <li className="mb-10 ml-6" key={i}>
                 <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                   <FaStethoscope />
                 </span>
@@ -34,6 +34,7 @@ export default function ChamberSection({ data }) {
                   {chamber.week_days?.map((item, i) => (
                     <p
                       className={`bg-${RANDCOLORPLATE[i]}-500 shadow-xl border rounded-2xl text-sm text-white font-medium px-4 py-[2px]`}
+                      key={i}
                     >
                       {t(`weekdays.${item}`)}
                     </p>

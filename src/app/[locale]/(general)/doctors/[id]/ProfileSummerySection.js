@@ -15,8 +15,11 @@ export default function ProfileSummerySection({ data }) {
               {t("Dr")} {data.name[locale]}
             </h2>
             <div className="flex justify-center gap-4 py-4">
-              {data.speciality?.map((sp) => (
-                <span className="text-base p-1 px-2 rounded text-indigo-600 bg-indigo-200">
+              {data.speciality?.map((sp, i) => (
+                <span
+                  key={i}
+                  className="text-base p-1 px-2 rounded text-indigo-600 bg-indigo-200"
+                >
                   {sp}
                 </span>
               ))}

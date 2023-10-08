@@ -8,8 +8,11 @@ export default function TestimonialSection({ testimonials }) {
       <div className="container">
         <div className="mt-14">
           <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
-            {testimonials?.map((item) => (
-              <div className="p-10 border rounded-xl bg-slate-100 shadow">
+            {testimonials?.map((item, i) => (
+              <div
+                key={i}
+                className="p-10 border rounded-xl bg-slate-100 shadow"
+              >
                 <FaQuoteLeft className="text-3xl" />
                 <p className="my-4">{item.details[locale]}</p>
                 <div className="border-b border-gray-200 w-full my-7" />
