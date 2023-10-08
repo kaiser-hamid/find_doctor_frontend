@@ -1,7 +1,7 @@
 //css
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-export default ({ data }) => {
+export default function Rating({ data }) {
   return (
     <div
       style={{
@@ -20,4 +20,4 @@ export default ({ data }) => {
       <i className="fa fa-star"></i>
     </div>
   );
-};
+}

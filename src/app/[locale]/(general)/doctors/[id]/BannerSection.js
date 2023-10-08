@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default () => {
+export default function BannerSection() {
   return (
     <section className="pt-36 bg-teal-100 bg-cover bg-no-repeat bg-center bg-[url('/assets/images/photos/5.jpg')]">
       <div className="container">
@@ -18,4 +18,4 @@ export default () => {
       </div>
     </section>
   );
-};
+}

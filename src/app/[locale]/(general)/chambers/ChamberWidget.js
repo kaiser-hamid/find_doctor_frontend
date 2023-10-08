@@ -9,7 +9,7 @@ import { HiGlobeAlt, HiMail } from "react-icons/hi";
 import "aos/dist/aos.css";
 import CopyToClipboard from "@/components/ui/CopyToClipboard";
 
-export default ({ chamber, t }) => {
+export default function ChamberWidget({ chamber, t }) {
   const locale = useLocale();
 
   useEffect(() => {
@@ -87,4 +87,4 @@ export default ({ chamber, t }) => {
       </div>
     </>
   );
-};
+}

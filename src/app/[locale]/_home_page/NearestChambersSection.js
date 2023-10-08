@@ -2,7 +2,7 @@ import { FaArrowRight, FaMap } from "react-icons/fa";
 import NearestChambersSlider from "./NearestChambersSlider";
 import { useTranslations } from "next-intl";
 
-export default ({ nearest_chambers }) => {
+export default function NearestChambersSection({ nearest_chambers }) {
   const t = useTranslations("general");
   const t_home = useTranslations("home");
   const nc = {
@@ -46,4 +46,4 @@ export default ({ nearest_chambers }) => {
       </div>
     </section>
   );
-};
+}

@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-export default () => {
+export default function BannserSection() {
   const t = useTranslations("about_us");
   return (
     <section className="pt-36 pb-24 bg-slate-100">
@@ -13,4 +13,4 @@ export default () => {
       </div>
     </section>
   );
-};
+}

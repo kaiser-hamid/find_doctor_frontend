@@ -5,7 +5,7 @@ import { doctorSpecialityOption } from "../../../helpers/form-helper";
 import Link from "next/link";
 import { useLocale } from "next-intl";
 import { FaSearch } from "react-icons/fa";
-export default ({ t, chamber_options }) => {
+export default function SearchWidget({ t, chamber_options }) {
   const locale = useLocale();
   const [searchInput, setSearchInput] = useState({
     name: "",
@@ -78,4 +78,4 @@ export default ({ t, chamber_options }) => {
       </div>
     </>
   );
-};
+}

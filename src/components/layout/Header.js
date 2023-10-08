@@ -7,7 +7,7 @@ import { NAV_MENUS } from "@/helpers/data-helper";
 import { useLocale } from "next-intl";
 import ChangeLocaleButton from "../ui/ChangeLocaleButton";
 
-export default () => {
+export default function Header() {
   const locale = useLocale();
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -143,4 +143,4 @@ export default () => {
       </button>
     </>
   );
-};
+}

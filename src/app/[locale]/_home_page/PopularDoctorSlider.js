@@ -5,7 +5,7 @@ import Doctor from "@/components/cards/Doctor";
 
 import "swiper/swiper-bundle.min.css";
 
-export default ({ t, popular_doctors }) => {
+export default function PopularDoctorSlider({ t, popular_doctors }) {
   return (
     <Swiper
       autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -39,4 +39,4 @@ export default ({ t, popular_doctors }) => {
       ))}
     </Swiper>
   );
-};
+}

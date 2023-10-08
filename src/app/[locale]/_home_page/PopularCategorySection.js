@@ -12,7 +12,7 @@ import {
   FaPrescriptionBottle,
 } from "react-icons/fa";
 
-export default () => {
+export default function PopularCategorySection() {
   const t = useTranslations("home.category");
   return (
     <section className="py-12">
@@ -125,4 +125,4 @@ export default () => {
       </div>
     </section>
   );
-};
+}

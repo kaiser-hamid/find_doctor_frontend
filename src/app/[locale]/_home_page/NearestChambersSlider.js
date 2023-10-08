@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useLocale } from "next-intl";
 
-export default ({ t, nearest_chambers }) => {
+export default function NearestChambersSlider({ t, nearest_chambers }) {
   const locale = useLocale();
   return (
     <div className="relative">
@@ -69,4 +69,4 @@ export default ({ t, nearest_chambers }) => {
       </Swiper>
     </div>
   );
-};
+}

@@ -3,7 +3,7 @@ import { FaStethoscope } from "react-icons/fa";
 import CopyToClipboard from "@/components/ui/CopyToClipboard";
 import { RANDCOLORPLATE } from "@/helpers/utils";
 
-export default ({ data }) => {
+export default function ChamberSection({ data }) {
   const locale = useLocale();
   const t = useTranslations("doctor");
   return (
@@ -66,4 +66,4 @@ export default ({ data }) => {
       </div>
     </section>
   );
-};
+}

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper";
 
-export default () => {
+export default function HeroSlider() {
   return (
     <div className="relative">
       <div className="hidden sm:block">
@@ -62,4 +62,4 @@ export default () => {
       </div>
     </div>
   );
-};
+}

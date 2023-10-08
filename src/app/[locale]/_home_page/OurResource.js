@@ -1,6 +1,6 @@
 import { useFormatter, useTranslations } from "next-intl";
 
-export default () => {
+export default function OurResource() {
   const t = useTranslations("general");
   const t_home = useTranslations("home");
 
@@ -51,4 +51,4 @@ export default () => {
       </div>
     </section>
   );
-};
+}

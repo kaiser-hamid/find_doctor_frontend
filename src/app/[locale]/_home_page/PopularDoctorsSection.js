@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import PopularDoctorSlider from "./PopularDoctorSlider";
 
-export default ({ popular_doctors }) => {
+export default function PopularDoctorsSection({ popular_doctors }) {
   const t_home = useTranslations("home");
   const t = useTranslations("general");
   const pd = {
@@ -20,4 +20,4 @@ export default ({ popular_doctors }) => {
       </div>
     </section>
   );
-};
+}

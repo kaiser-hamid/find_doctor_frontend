@@ -9,7 +9,7 @@ const getPageData = async () => {
   }
   return res.json();
 };
-export default async function chambers() {
+export default async function page() {
   const { data: pageData } = await getPageData();
 
   return (

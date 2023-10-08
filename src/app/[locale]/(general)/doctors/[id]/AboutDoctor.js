@@ -1,7 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { FaStar, FaUser, FaUserAlt } from "react-icons/fa";
 
-export default ({ data }) => {
+export default function AboutDoctor({ data }) {
   const t = useTranslations("doctor");
   const locale = useLocale();
   return (
@@ -18,4 +18,4 @@ export default ({ data }) => {
       </div>
     </section>
   );
-};
+}

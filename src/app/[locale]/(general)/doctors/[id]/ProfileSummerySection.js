@@ -2,7 +2,7 @@ import Rating from "@/components/ui/Rating";
 import { useFormatter, useLocale, useTranslations } from "next-intl";
 import { FaEye } from "react-icons/fa";
 
-export default ({ data }) => {
+export default function ProfileSummerySection({ data }) {
   const format = useFormatter();
   const t = useTranslations("general");
   const locale = useLocale();
@@ -63,4 +63,4 @@ export default ({ data }) => {
       </div>
     </section>
   );
-};
+}

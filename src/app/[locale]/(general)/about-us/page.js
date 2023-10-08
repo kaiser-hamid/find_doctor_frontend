@@ -2,7 +2,7 @@ import AboutUs from "./AboutUs";
 import BannserSection from "./BannserSection";
 import MeetOurTeam from "./MeetOurTeam";
 
-export default () => {
+export default function page() {
   return (
     <>
       <BannserSection />
@@ -10,4 +10,4 @@ export default () => {
       <MeetOurTeam />
     </>
   );
-};
+}

@@ -2,7 +2,7 @@
 import { FaCopy } from "react-icons/fa";
 import Swal from "sweetalert2";
 
-export default ({ text }) => {
+export default function CopyToClipboard({ text }) {
   const handleCopy = async (e) => {
     const { text_to_be_copied } = e.currentTarget.dataset;
     await navigator.clipboard.writeText(text_to_be_copied);
@@ -26,4 +26,4 @@ export default ({ text }) => {
       <FaCopy />
     </button>
   );
-};
+}

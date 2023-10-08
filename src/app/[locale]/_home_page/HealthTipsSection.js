@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import { HiLightBulb, HiOutlineLightBulb } from "react-icons/hi";
 
-export default ({ tips }) => {
+export default function HealthTipsSection({ tips }) {
   const t = useTranslations("home");
   const locale = useLocale();
   return (
@@ -57,4 +57,4 @@ export default ({ tips }) => {
       </div>
     </section>
   );
-};
+}

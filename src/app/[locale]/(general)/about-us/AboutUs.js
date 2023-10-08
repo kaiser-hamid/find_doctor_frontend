@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-export default () => {
+export default function AboutUs() {
   const t = useTranslations("about_us");
   return (
     <section className="lg:py-24 sm:py-16 py-4">
@@ -52,4 +52,4 @@ export default () => {
       </div>
     </section>
   );
-};
+}

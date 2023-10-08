@@ -11,7 +11,7 @@ const getPageData = async (id) => {
   }
   return res.json();
 };
-export default async ({ params: { id } }) => {
+export default async function page({ params: { id } }) {
   const { data: pageData, status } = await getPageData(id);
   return (
     <>
@@ -21,4 +21,4 @@ export default async ({ params: { id } }) => {
       <AboutDoctor data={pageData} /> */}
     </>
   );
-};
+}

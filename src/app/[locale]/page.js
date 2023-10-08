@@ -15,7 +15,7 @@ const getPageData = async () => {
   return res.json();
 };
 
-export default async function Home() {
+export default async function page() {
   const { data: pageData } = await getPageData();
 
   return (

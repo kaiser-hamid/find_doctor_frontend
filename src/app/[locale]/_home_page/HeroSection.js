@@ -2,7 +2,7 @@ import SearchWidget from "./SearchWidget";
 import TypeWriteWidget from "./TypeWriteWidget";
 import HeroSlider from "./HeroSlider";
 import { useTranslations } from "next-intl";
-export default ({ chamber_options }) => {
+export default function HeroSection({ chamber_options }) {
   const t_tww = useTranslations("home.typewriter_widget");
   const t_sw = useTranslations("home.search_widget");
   const tww = {
@@ -33,4 +33,4 @@ export default ({ chamber_options }) => {
       </div>
     </section>
   );
-};
+}

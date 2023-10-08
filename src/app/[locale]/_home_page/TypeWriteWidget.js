@@ -1,6 +1,6 @@
 "use client";
 import { Typewriter } from "react-simple-typewriter";
-export default ({ t }) => {
+export default function TypeWriteWidget({ t }) {
   return (
     <div className="mb-7">
       <h1 className="md:text-6xl/tight text-4xl font-semibold text-gray-700 py-2">
@@ -19,4 +19,4 @@ export default ({ t }) => {
       </h2>
     </div>
   );
-};
+}

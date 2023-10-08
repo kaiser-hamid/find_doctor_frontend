@@ -1,7 +1,7 @@
 import { useLocale } from "next-intl";
 import { FaQuoteLeft } from "react-icons/fa";
 
-export default ({ testimonials }) => {
+export default function TestimonialSection({ testimonials }) {
   const locale = useLocale();
   return (
     <section className="py-12">
@@ -33,4 +33,4 @@ export default ({ testimonials }) => {
       </div>
     </section>
   );
-};
+}

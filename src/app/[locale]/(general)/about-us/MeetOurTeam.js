@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-export default () => {
+export default function MeetOurTeam() {
   const t = useTranslations("about_us");
   return (
     <section className="lg:pb-24 pb-16">
@@ -62,4 +62,4 @@ export default () => {
       </div>
     </section>
   );
-};
+}
