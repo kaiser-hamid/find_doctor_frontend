@@ -13,7 +13,7 @@ export default function SelectWithSearch({
   };
 
   const handleGetValue = () => {
-    const valueForSet = options.find((item) => item.value === value);
+    const valueForSet = options?.find((item) => item.value === value);
     return valueForSet || null;
   };
 
