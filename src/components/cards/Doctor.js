@@ -12,7 +12,7 @@ export default function Doctor({ t, pageData }) {
           <Image
             width={500}
             height={500}
-            src="/assets/images/avatars/img-2.jpg"
+            src={pageData.profile_picture}
             alt="Doctor image"
             className="rounded-full h-36 w-36 border border-gray-300 p-1"
           />

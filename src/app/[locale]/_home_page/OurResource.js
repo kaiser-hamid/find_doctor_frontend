@@ -21,28 +21,28 @@ export default function OurResource() {
             <div>
               <span className="text-3xl">{format.number(100)}+</span>
               <h1 className="mt-3 mb-1 capitalize">{t("chambers")} </h1>
-              <p class="text-gray-500">
+              <p className="text-gray-500">
                 {t_home("across item countries", { item: 10 })}
               </p>
             </div>
             <div>
               <span className="text-3xl">{format.number(3210)}+</span>
               <h1 className="mt-3 mb-1 capitalize">{t("doctors")}</h1>
-              <p class="text-gray-500">
+              <p className="text-gray-500">
                 {t_home("across item countries", { item: 10 })}
               </p>
             </div>
             <div>
               <span className="text-3xl">{format.number(100)}+</span>
               <h1 className="mt-3 mb-1 capitalize">{t("visitors")}</h1>
-              <p class="text-gray-500">
+              <p className="text-gray-500">
                 {t_home("across item countries", { item: 10 })}
               </p>
             </div>
             <div>
               <span className="text-3xl">{format.number(8)}</span>
               <h1 className="mt-3 mb-1">{t("Awards won")} </h1>
-              <p class="text-gray-500">
+              <p className="text-gray-500">
                 {t_home("across item countries", { item: 10 })}
               </p>
             </div>

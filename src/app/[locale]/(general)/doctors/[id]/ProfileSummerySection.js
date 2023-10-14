@@ -1,6 +1,7 @@
+import CopyToClipboard from "@/components/ui/CopyToClipboard";
 import Rating from "@/components/ui/Rating";
 import { useFormatter, useLocale, useTranslations } from "next-intl";
-import { FaEye } from "react-icons/fa";
+import { FaCheck, FaEye, FaRegHandPointRight } from "react-icons/fa";
 
 export default function ProfileSummerySection({ data }) {
   const format = useFormatter();
@@ -15,18 +16,13 @@ export default function ProfileSummerySection({ data }) {
               {t("Dr")} {data.name[locale]}
             </h2>
             <div className="flex justify-center gap-4 py-4">
-              {data.speciality?.map((sp, i) => (
-                <span
-                  key={i}
-                  className="text-base p-1 px-2 rounded text-indigo-600 bg-indigo-200"
-                >
-                  {sp}
-                </span>
-              ))}
+              <span className="text-xl font-light py-1 rounded-lg text-primary">
+                {data.designation}
+              </span>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 sm:gap-6 justify-center items-center sm:border-y sm:py-4 lg:py-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:gap-6 justify-center items-center sm:border-y sm:py-4 lg:py-4">
           <div className="w-full py-4">
             <div className="border-l-8 border-l-blue-500 pl-8 h-14">
               <p>{t("BMDC Reg")}</p>
@@ -35,31 +31,57 @@ export default function ProfileSummerySection({ data }) {
           </div>
           <div className="w-full py-4">
             <div className="border-l-8 border-l-teal-500 pl-8 h-14 capitalize">
-              <p>{t("experience")}</p>
-              <h4>{data.experience} year(s) of experience</h4>
+              <p>{t("Year of experience")}</p>
+              <h4>{data.experience}</h4>
             </div>
           </div>
 
           <div className="w-full py-4">
-            <div className="border-l-8 border-l-yellow-500 pl-8 h-14">
-              <p>{t("education")}</p>
-              <h4></h4>
-            </div>
-          </div>
-          <div className="w-full py-4">
-            <div className="border-l-8 border-l-green-400 pl-8 h-14">
-              <p>{t("Total Viewed")}</p>
-              <h4 className="flex items-center gap-1">
-                <FaEye className="inline text-blue-500" />{" "}
-                {format.number(data.total_views)}
-                <span className="text-2xl">+</span>
+            <div className="border-l-8 border-l-yellow-500 pl-8 h-14 capitalize">
+              <p>{t("email")}</p>
+              <h4 className="flex items-center gap-x-1">
+                <span>{data.email}</span>
+                <CopyToClipboard text={data.email} />
               </h4>
             </div>
           </div>
+
           <div className="w-full py-4">
             <div className="border-l-8 border-l-orange-500 pl-8 h-14 capitalize">
               <p>{t("rating")}</p>
               <Rating data={data.rating} />
+            </div>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-14 mt-16">
+          <div className="col-span-1 border rounded-lg p-4">
+            <div className="border-b">
+              <h4 className="text-center pb-2">Speciality</h4>
+            </div>
+            <div className="p-4 leading-8">
+              <ul>
+                {data.speciality?.map((sp) => (
+                  <li key={sp}>
+                    <FaRegHandPointRight className="inline text-blue-600" />{" "}
+                    <span className="px-2"> {sp}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="col-span-1 border rounded-lg p-4">
+            <div className="border-b">
+              <h4 className="text-center pb-2">Degree</h4>
+            </div>
+            <div className="p-4 leading-8">
+              <ul>
+                {data.degree?.map((dg) => (
+                  <li key={dg}>
+                    <FaCheck className="inline text-primary" />{" "}
+                    <span className="px-2"> {dg}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

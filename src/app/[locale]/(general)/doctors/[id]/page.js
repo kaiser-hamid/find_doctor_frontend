@@ -20,10 +20,10 @@ export default async function page({ params: { id } }) {
   const { data: pageData, status } = await getPageData(id);
   return (
     <>
-      <BannerSection />
-      {/* <ProfileSummerySection data={pageData} />
+      <BannerSection data={pageData} />
+      <ProfileSummerySection data={pageData} />
       <ChamberSection data={pageData.chambers} />
-      <AboutDoctor data={pageData} /> */}
+      <AboutDoctor data={pageData} />
     </>
   );
 }

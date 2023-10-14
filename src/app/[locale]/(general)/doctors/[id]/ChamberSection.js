@@ -46,13 +46,19 @@ export default function ChamberSection({ data }) {
                     time_b: chamber.schedule.end,
                   })}
                 </p>
-                <p className="flex gap-2 items-center mb-4 text-sm font-semibold text-gray-900 dark:text-gray-400">
-                  <span> {t("For serial")}:</span>
-                  <a href={`tel:${chamber.phone}`} className="text-blue-500">
-                    {chamber.phone}
-                  </a>
-                  <CopyToClipboard text={chamber.phone} />
-                </p>
+                <div className="flex flex-wrap gap-2 items-center mb-4 text-sm font-semibold text-gray-900 dark:text-gray-400">
+                  <span className="whitespace-nowrap"> {t("For serial")}:</span>
+                  <div className="flex flex-wrap items-center gap-x-4">
+                    {chamber.phone?.map((item) => (
+                      <span key={item} className="flex items-center gap-x-1">
+                        <a href={`tel:${item}`} className="text-blue-500">
+                          {item}
+                        </a>
+                        <CopyToClipboard text={item} />
+                      </span>
+                    ))}
+                  </div>
+                </div>
                 <button
                   type="button"
                   disabled

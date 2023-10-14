@@ -13,15 +13,16 @@
     "next": "next",
     "Doctor list": "Doctor list",
     "Dr": "Dr.",
-    "BMDC Reg": "BMDC Reg.",
-    "experience": "experience",
-    "education": "education",
+    "BMDC Reg": "BM&DC Reg.",
+    "Year of experience": "Year of experience",
+    "degree": "degree",
+    "email": "email",
     "Total Viewed": "Total Viewed",
     "rating": "ratings"
   },
   "home": {
     "typewriter_widget": {
-      "Welcome": "Welcome",
+      "Welcome": "Welcome to Sasthobondhu",
       "Find your doctor by": "Find your doctor by",
       "doctor name": "doctor name",
       "location": "location",

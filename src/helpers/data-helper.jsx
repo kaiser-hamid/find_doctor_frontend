@@ -7,7 +7,7 @@ export const NAV_MENUS = [
     dropdown: [],
   },
   {
-    label: { en: "Chambers", bn: "চেম্বার" },
+    label: { en: "Centers", bn: "সেন্টার সমূহ" },
     href: "/chambers",
     hasDropdown: false,
     dropdownTarget: null,

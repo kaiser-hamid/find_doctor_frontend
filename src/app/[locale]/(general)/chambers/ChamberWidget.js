@@ -25,7 +25,7 @@ export default function ChamberWidget({ chamber, t }) {
   };
   return (
     <>
-      <div class="border rounded p-6 bg-slate-100" data-aos="fade-up">
+      <div className="border rounded p-6 bg-slate-100" data-aos="fade-up">
         <div className="flex gap-4 pb-4">
           <div className="flex justify-center items-center bg-white h-20 w-20 rounded-lg">
             {/* <Image
@@ -41,7 +41,7 @@ export default function ChamberWidget({ chamber, t }) {
             />
           </div>
           <div>
-            <h3 class="text-xl text-gray-700">{chamber.name[locale]}</h3>
+            <h3 className="text-xl text-gray-700">{chamber.name[locale]}</h3>
             <p className="text-gray-500 font-semibold my-2">
               {chamber?.area[locale]}
             </p>
@@ -76,10 +76,10 @@ export default function ChamberWidget({ chamber, t }) {
             </li>
           </ul>
         </div>
-        <div class="mt-8 mb-3">
+        <div className="mt-8 mb-3">
           <a
             href="#"
-            class="py-3 px-6 rounded border border-primary text-primary hover:text-white hover:bg-primary hover:shadow-lg hover:shadow-primary/50 focus:outline focus:outline-primary/50 transition-all duration-250"
+            className="py-3 px-6 rounded border border-primary text-primary hover:text-white hover:bg-primary hover:shadow-lg hover:shadow-primary/50 focus:outline focus:outline-primary/50 transition-all duration-250"
           >
             {t["explore"]}
           </a>

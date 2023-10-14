@@ -2,7 +2,7 @@ import SearchWidget from "./SearchWidget";
 import TypeWriteWidget from "./TypeWriteWidget";
 import HeroSlider from "./HeroSlider";
 import { useTranslations } from "next-intl";
-export default function HeroSection({ chamber_options }) {
+export default function HeroSection({ chamber_options, speciality_options }) {
   const t_tww = useTranslations("home.typewriter_widget");
   const t_sw = useTranslations("home.search_widget");
   const tww = {
@@ -24,7 +24,11 @@ export default function HeroSection({ chamber_options }) {
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-16 items-center">
           <div>
             <TypeWriteWidget t={tww} />
-            <SearchWidget t={sw} chamber_options={chamber_options} />
+            <SearchWidget
+              t={sw}
+              chamber_options={chamber_options}
+              speciality_options={speciality_options}
+            />
           </div>
           <div className="order-1 lg:order-2 hidden sm:block">
             <HeroSlider />

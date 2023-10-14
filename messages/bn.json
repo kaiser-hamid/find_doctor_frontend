@@ -13,15 +13,16 @@
     "next": "পরবর্তি",
     "Doctor list": "ডাক্তারদের তালিকা",
     "Dr": "ডাঃ",
-    "BMDC Reg": "BMDC রেজিস্ট্রেশন",
-    "experience": "অভিজ্ঞতা",
-    "education": "একাডেমিক যোগ্যতা",
+    "BMDC Reg": "BM&DC রেজিস্ট্রেশন",
+    "Year of experience": "অভিজ্ঞতার বছর",
+    "degree": "ডিগ্রী",
+    "email": "ইমেইল",
     "Total Viewed": "সর্বমোট ভিউ",
     "rating": "রেটিং"
   },
   "home": {
     "typewriter_widget": {
-      "Welcome": "স্বাগতম",
+      "Welcome": "স্বাস্থ্যবন্ধুতে স্বাগতম",
       "Find your doctor by": "আপনার ডাক্তার খুজুন",
       "doctor name": "ডাক্তারের নাম দিয়ে",
       "location": "এরিয়া দিয়ে",

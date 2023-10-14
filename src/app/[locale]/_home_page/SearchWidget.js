@@ -1,11 +1,14 @@
 "use client";
 import SelectWithSearch from "../../../components/ui/SelectWithSearch";
 import { useState } from "react";
-import { doctorSpecialityOption } from "../../../helpers/form-helper";
 import Link from "next/link";
 import { useLocale } from "next-intl";
 import { FaSearch } from "react-icons/fa";
-export default function SearchWidget({ t, chamber_options }) {
+export default function SearchWidget({
+  t,
+  chamber_options,
+  speciality_options,
+}) {
   const locale = useLocale();
   const [searchInput, setSearchInput] = useState({
     name: "",
@@ -13,7 +16,7 @@ export default function SearchWidget({ t, chamber_options }) {
     chamber: "",
   });
 
-  const speciality_options = doctorSpecialityOption.map((item) => {
+  const specialityOptions = speciality_options.map((item) => {
     return {
       id: item.id,
       label: item.label[locale],
@@ -51,7 +54,7 @@ export default function SearchWidget({ t, chamber_options }) {
               name="speciality"
               value={searchInput.speciality}
               onChange={handleInputChange}
-              options={speciality_options}
+              options={specialityOptions}
               placeholderText={t["Type or select speciality"]}
             />
           </div>
@@ -63,7 +66,7 @@ export default function SearchWidget({ t, chamber_options }) {
               value={searchInput.chamber}
               onChange={handleInputChange}
               options={chamberOptions}
-              placeholderText={t["Type or select chamber"]}
+              placeholderText={t["Type select chamber"]}
             />
           </div>
         </div>

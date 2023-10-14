@@ -8,10 +8,10 @@ export default function ChamberSection({ chambers }) {
     explore: t("explore"),
   };
   return (
-    <section class="sm:py-12 lg:py-20">
+    <section className="sm:py-12 lg:py-20">
       <span className="hidden bg-emerald-100 bg-cyan-100 bg-blue-100 bg-orange-100 bg-pink-100 bg-red-100 bg-purple-100, bg-amber-100, bg-lime-100 bg-indigo-100"></span>
-      <div class="container">
-        <div class="grid lg:grid-cols-2 grid-cols-1 gap-8 mt-16">
+      <div className="container">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 mt-16">
           {chambers?.map((item) => (
             <ChamberWidget key={item._id} chamber={item} t={cw} />
           ))}

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { NAV_MENUS } from "@/helpers/data-helper";
 import { useLocale } from "next-intl";
 import ChangeLocaleButton from "../ui/ChangeLocaleButton";
+import Image from "next/image";
 
 export default function Header() {
   const locale = useLocale();
@@ -43,18 +44,14 @@ export default function Header() {
         <div className="container">
           <nav className="flex items-center">
             {/* Navbar Brand Logo */}
-            <span href="index.html">
-              <img
-                src="assets/images/logo-dark.png"
-                className="h-8 logo-dark"
-                alt="Logo Dark"
+            <Link href="/">
+              <Image
+                src="/assets/images/logo-dark.png"
+                height={100}
+                width={150}
+                alt="Logo"
               />
-              <img
-                src="assets/images/logo-light.png"
-                className="h-8 logo-light"
-                alt="Logo Light"
-              />
-            </span>
+            </Link>
 
             {/* Nevigation Menu */}
             <div className="hidden lg:block ms-auto">

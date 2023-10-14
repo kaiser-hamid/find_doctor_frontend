@@ -11,7 +11,7 @@ export default function BannerSection() {
         <div className="relative lg:w-3/5 mx-auto z-30 pt-4">
           <div className="text-center text-white">
             <h2 className="text-5xl font-semibold mb-8">{t("headline")}</h2>
-            <p class="text-base/relaxed tracking-wide">{t("subhead")} </p>
+            <p className="text-base/relaxed tracking-wide">{t("subhead")} </p>
           </div>
         </div>
       </div>

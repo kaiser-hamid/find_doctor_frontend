@@ -25,7 +25,10 @@ export default async function page() {
 
   return (
     <>
-      <HeroSection chamber_options={pageData.chamber_options} />
+      <HeroSection
+        chamber_options={pageData.chamber_options}
+        speciality_options={pageData.speciality_options}
+      />
       <PopularCategorySection />
       <PopularDoctorsSection popular_doctors={pageData.popular_doctors} />
       <NearestChambersSection nearest_chambers={pageData.nearest_chambers} />

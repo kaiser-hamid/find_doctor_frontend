@@ -19,7 +19,7 @@ export default function NearestChambersSection({ nearest_chambers }) {
           >
             <div className="flex lg:justify-start justify-center">
               <div className="h-12 w-12 bg-primary/10 flex items-center justify-center rounded-lg">
-                <FaMap className="text-blue-500" />
+                <FaMap className="text-primary" />
               </div>
             </div>
             <div className=" text-center lg:text-left">

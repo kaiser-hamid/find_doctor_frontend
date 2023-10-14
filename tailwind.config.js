@@ -43,7 +43,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: colors.blue[600],
+        primary: colors.teal[500],
       },
     },
   },

@@ -27,7 +27,7 @@ export default function ChangeLocaleButton() {
         <Link
           locale="bn"
           href={path}
-          className="bg-teal-500 text-white px-4 py-2 rounded inline-flex items-center text-sm"
+          className="bg-blue-600 text-white px-4 py-2 rounded inline-flex items-center text-sm"
         >
           বাংলা
         </Link>
