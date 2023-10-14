@@ -6,6 +6,7 @@ export default function PopularDoctorsSection({ popular_doctors }) {
   const t = useTranslations("general");
   const pd = {
     "View details": t("View details"),
+    Dr: t("Dr"),
   };
 
   return (

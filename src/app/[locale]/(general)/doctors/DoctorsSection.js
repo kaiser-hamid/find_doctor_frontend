@@ -6,6 +6,7 @@ export default function DoctorsSection({ doctors }) {
   const t = useTranslations("general");
   const pd = {
     "View details": t("View details"),
+    Dr: t("Dr"),
   };
   const pnp = {
     next: t("next"),

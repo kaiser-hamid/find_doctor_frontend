@@ -18,13 +18,13 @@ export default function Doctor({ t, pageData }) {
           />
         </div>
         <div className="text-center py-4">
-          <h2 className="text-xl mb-3">{pageData.name[locale]}</h2>
-          <ul className="font-semibold">
-            {pageData.speciality?.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
-          {pageData.education?.join(", ")}
+          <h2 className="text-2xl mb-3">
+            {t["Dr"]} {pageData.name[locale]}
+          </h2>
+          <p className="text-lg text-primary font-normal">
+            {pageData.designation}
+          </p>
+          <p className="font-extralight">{pageData.degree?.join(", ")}</p>
         </div>
       </div>
 

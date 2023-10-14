@@ -1,3 +1,4 @@
+import HOC from "@/components/hoc/HOC";
 import { useLocale, useTranslations } from "next-intl";
 import { FaStar, FaUser, FaUserAlt } from "react-icons/fa";
 
@@ -12,9 +13,11 @@ export default function AboutDoctor({ data }) {
             {t("about doctor", { name: data.name[locale] })}
           </h2>
         </div>
-        <div className="text-justify mt-12">
-          {data.about_doctor && data.about_doctor[locale]}
-        </div>
+        <HOC data={!!data.about_doctor}>
+          <div className="text-justify mt-12 leading-8">
+            {data.about_doctor && data.about_doctor[locale]}
+          </div>
+        </HOC>
       </div>
     </section>
   );
