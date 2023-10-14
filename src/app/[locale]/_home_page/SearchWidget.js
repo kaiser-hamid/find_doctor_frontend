@@ -16,14 +16,14 @@ export default function SearchWidget({
     chamber: "",
   });
 
-  const specialityOptions = speciality_options.map((item) => {
+  const specialityOptions = speciality_options?.map((item) => {
     return {
       id: item.id,
       label: item.label[locale],
       value: item.value,
     };
   });
-  const chamberOptions = chamber_options.map((item) => {
+  const chamberOptions = chamber_options?.map((item) => {
     return {
       id: item.id,
       label: item.label[locale],

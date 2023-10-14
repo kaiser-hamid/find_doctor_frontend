@@ -56,7 +56,7 @@ export default function Header() {
             {/* Nevigation Menu */}
             <div className="hidden lg:block ms-auto">
               <ul className="navbar-nav flex gap-x-3 items-center justify-center">
-                {NAV_MENUS.map((nav, i) => (
+                {NAV_MENUS?.map((nav, i) => (
                   <li key={i} className="nav-item">
                     <Link className="nav-link" href={nav.href}>
                       {nav.label[locale]}
@@ -111,7 +111,7 @@ export default function Header() {
               className="navbar-nav flex flex-col gap-2"
               data-fc-type="accordion"
             >
-              {NAV_MENUS.map((nav, i) => (
+              {NAV_MENUS?.map((nav, i) => (
                 <li key={i} className="nav-item">
                   <Link href={nav.href} className="nav-link">
                     {nav.label[locale]}

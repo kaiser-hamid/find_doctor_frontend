@@ -32,7 +32,7 @@ export default function PopularDoctorSlider({ t, popular_doctors }) {
       modules={[Autoplay]}
       className="ms-popular-doctor"
     >
-      {popular_doctors.map((item, i) => (
+      {popular_doctors?.map((item, i) => (
         <SwiperSlide key={i}>
           <Doctor t={t} pageData={item} />
         </SwiperSlide>
