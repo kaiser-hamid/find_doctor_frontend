@@ -13,7 +13,7 @@ export default function ProfileSummerySection({ data }) {
         <div className="pt-24 sm:pb-8 text-center">
           <div className="mb-8">
             <h2 className="text-3xl lg:text-4xl font-semibold">
-              {t("Dr")} {data.name[locale]}
+              {t("Dr")} {data?.name[locale]}
             </h2>
             <div className="flex justify-center gap-4 py-4">
               <span className="text-xl font-light py-1 rounded-lg text-primary">

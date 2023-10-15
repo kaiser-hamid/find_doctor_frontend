@@ -8,9 +8,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useLocale } from "next-intl";
+import Chamber from "@/components/cards/Chamber";
 
 export default function NearestChambersSlider({ t, nearest_chambers }) {
-  const locale = useLocale();
   return (
     <div className="relative">
       <div className="hidden sm:block">
@@ -49,21 +49,7 @@ export default function NearestChambersSlider({ t, nearest_chambers }) {
       >
         {nearest_chambers?.map((item, i) => (
           <SwiperSlide key={i}>
-            <div className="border rounded-md p-8">
-              <h1 className="text-xl mb-3">{item.name[locale]}</h1>
-              <p className="text-gray-400">{item.area[locale]} </p>
-              <p className="text-gray-700 py-8">
-                {item.operating_hours[locale]}{" "}
-              </p>
-              <button className="mt-10 flex items-center">
-                <a
-                  href="#"
-                  className="border border-primary capitalize text-primary rounded-md hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/30 transition-all duration-500 focus:shadow-none focus:outline focus:outline-primary/40 py-2 px-4"
-                >
-                  {t["explore"]}
-                </a>
-              </button>
-            </div>
+            <Chamber chamber={item} t={t} />
           </SwiperSlide>
         ))}
       </Swiper>

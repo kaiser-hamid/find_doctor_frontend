@@ -44,6 +44,8 @@ export default function SearchWidget({
           <input
             type="text"
             name="name"
+            value={searchInput.name}
+            onChange={handleInputChange}
             className="w-full form-input pe-10 text-sm font-medium focus:ring-0 focus:border-slate-500 rounded border-slate-400 placeholder-gray-300"
             placeholder={t["Type doctor name"]}
           />

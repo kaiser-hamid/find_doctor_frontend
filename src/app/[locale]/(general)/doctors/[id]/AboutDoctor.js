@@ -10,10 +10,10 @@ export default function AboutDoctor({ data }) {
       <div className="container relative">
         <div className="text-center">
           <h2 className="md:text-3xl text-xl font-semibold my-5">
-            {t("about doctor", { name: data.name[locale] })}
+            {t("about doctor", { name: data?.name[locale] })}
           </h2>
         </div>
-        <HOC data={!!data.about_doctor}>
+        <HOC data={data.about_doctor}>
           <div className="text-justify mt-12 leading-8">
             {data.about_doctor && data.about_doctor[locale]}
           </div>

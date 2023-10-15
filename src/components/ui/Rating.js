@@ -7,10 +7,10 @@ export default function Rating({ data }) {
       style={{
         display: "inline-block",
         background: `linear-gradient(90deg, orange ${data}%, gray 0%)`,
-        "background-clip": "text",
-        "-webkit-background-clip": "text",
+        backgroundClip: "text",
+        WebkitBackgroundClip: "text",
         color: "transparent",
-        "-webkit-color": "transparent",
+        WebkitColor: "transparent",
       }}
     >
       <i className="fa fa-star"></i>

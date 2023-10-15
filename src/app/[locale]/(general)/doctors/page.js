@@ -3,9 +3,9 @@ import DoctorsSection from "./DoctorsSection";
 import SearchSeaction from "./SearchSeaction";
 
 //data fetching
-const getPageData = async () => {
+const getPageData = async (queryString) => {
   try {
-    const res = await fetch(`${process.env.API_URL}/doctors`, {
+    const res = await fetch(`${process.env.API_URL}/doctors?${queryString}`, {
       cache: "no-store",
     });
     if (!res.ok) {
@@ -17,8 +17,9 @@ const getPageData = async () => {
     return [];
   }
 };
-export default async function page() {
-  const { data: pageData } = await getPageData();
+export default async function page({ searchParams }) {
+  const queryString = new URLSearchParams(searchParams)?.toString();
+  const { data: pageData } = await getPageData(queryString);
   return (
     <>
       <BannerSection />

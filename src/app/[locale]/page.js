@@ -29,7 +29,7 @@ export default async function page() {
         chamber_options={pageData.chamber_options}
         speciality_options={pageData.speciality_options}
       />
-      <PopularCategorySection />
+      <PopularCategorySection categories={pageData.popular_categories} />
       <PopularDoctorsSection popular_doctors={pageData.popular_doctors} />
       <NearestChambersSection nearest_chambers={pageData.nearest_chambers} />
       <HealthTipsSection tips={pageData.tips} />

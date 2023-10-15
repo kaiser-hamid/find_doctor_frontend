@@ -8,7 +8,7 @@ export const NAV_MENUS = [
   },
   {
     label: { en: "Centers", bn: "সেন্টার সমূহ" },
-    href: "/chambers",
+    href: "/centers",
     hasDropdown: false,
     dropdownTarget: null,
     dropdown: [],

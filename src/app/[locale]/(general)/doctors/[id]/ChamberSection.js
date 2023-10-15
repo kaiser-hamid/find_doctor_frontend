@@ -18,7 +18,7 @@ export default function ChamberSection({ data }) {
             {t("Appointment Schedules")}
           </h1>
         </div>
-        <HOC data={data.length}>
+        <HOC data={data}>
           <div className="px-4 sm:px-16 lg:px-24">
             <ol className="relative border-l border-gray-200 dark:border-gray-700">
               {data?.map((chamber, i) => (
