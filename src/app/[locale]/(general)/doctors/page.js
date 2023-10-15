@@ -5,7 +5,9 @@ import SearchSeaction from "./SearchSeaction";
 //data fetching
 const getPageData = async () => {
   try {
-    const res = await fetch(`${process.env.API_URL}/doctors`);
+    const res = await fetch(`${process.env.API_URL}/doctors`, {
+      cache: "no-store",
+    });
     if (!res.ok) {
       throw Error("Failed to fetch data");
     }

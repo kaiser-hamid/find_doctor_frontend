@@ -4,7 +4,9 @@ import ChamberSection from "./ChamberSection";
 //data fetching
 const getPageData = async () => {
   try {
-    const res = await fetch(`${process.env.API_URL}/chambers`);
+    const res = await fetch(`${process.env.API_URL}/chambers`, {
+      cache: "no-store",
+    });
     if (!res.ok) {
       throw Error("Failed to fetch data");
     }

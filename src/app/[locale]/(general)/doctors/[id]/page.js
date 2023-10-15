@@ -6,7 +6,9 @@ import ProfileSummerySection from "./ProfileSummerySection";
 //data fetching
 const getPageData = async (id) => {
   try {
-    const res = await fetch(`${process.env.API_URL}/doctors/${id}`);
+    const res = await fetch(`${process.env.API_URL}/doctors/${id}`, {
+      cache: "no-store",
+    });
     if (!res.ok) {
       throw Error("Failed to fetch data");
     }
