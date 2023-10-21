@@ -7,8 +7,10 @@ export default function HOC({ children, data }) {
   if (Array.isArray(data)) {
     hasData = !!data.length;
   } else if (dataType === "object") {
-    const keysArray = Object.keys(data);
-    hasData = !!keysArray.length;
+    if (data) {
+      const keysArray = Object.keys(data);
+      hasData = !!keysArray.length;
+    }
   }
   if (hasData) {
     return children;

@@ -2,6 +2,7 @@ import { useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowAltCircleUp, FaEye } from "react-icons/fa";
+import Avatar from "../ui/Avatar";
 
 export default function Doctor({ t, pageData }) {
   const locale = useLocale();
@@ -9,12 +10,13 @@ export default function Doctor({ t, pageData }) {
     <div className="flex flex-col justify-between border bg-teal-50 border-gray-300 p-4 bg-white rounded-lg min-h-[380px] hover:shadow-lg transition duration-150">
       <div>
         <div className="flex items-center justify-center px-10 py-4">
-          <Image
+          <Avatar
+            src={pageData.profile_picture}
+            sex={pageData.gender}
             width={500}
             height={500}
-            src={pageData.profile_picture}
-            alt="Doctor image"
             className="rounded-full h-36 w-36 border border-gray-300 p-1"
+            alt="Doctor avatar"
           />
         </div>
         <div className="text-center py-4">

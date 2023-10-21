@@ -26,13 +26,13 @@ export default function ProfileSummerySection({ data }) {
           <div className="w-full py-4">
             <div className="border-l-8 border-l-blue-500 pl-8 h-14">
               <p>{t("BMDC Reg")}</p>
-              <h4>{data.reg_no}</h4>
+              <h4>{data.reg_no || "[Not available]"}</h4>
             </div>
           </div>
           <div className="w-full py-4">
             <div className="border-l-8 border-l-teal-500 pl-8 h-14 capitalize">
               <p>{t("Year of experience")}</p>
-              <h4>{data.experience}</h4>
+              <h4>{data.experience || "[Not available]"}</h4>
             </div>
           </div>
 
@@ -40,8 +40,14 @@ export default function ProfileSummerySection({ data }) {
             <div className="border-l-8 border-l-yellow-500 pl-8 h-14 capitalize">
               <p>{t("email")}</p>
               <h4 className="flex items-center gap-x-1">
-                <span>{data.email}</span>
-                <CopyToClipboard text={data.email} />
+                {data.email ? (
+                  <>
+                    <span>{data.email}</span>
+                    <CopyToClipboard text={data.email} />
+                  </>
+                ) : (
+                  "[Not available]"
+                )}
               </h4>
             </div>
           </div>
