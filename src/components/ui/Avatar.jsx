@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ({ src, sex, className, width, height, alt }) {
+export default function Avatar({ src, sex, className, width, height, alt }) {
   const avatar =
     sex.toLowerCase() == "female"
       ? "/assets/images/avatars/doctor-female.jpg"

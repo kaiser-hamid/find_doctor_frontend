@@ -23,7 +23,7 @@ export default function Chamber({ t, chamber }) {
         <div>
           <ul>
             {chamber.phone?.map((phone) => (
-              <li className="flex items-center gap-2">
+              <li key={phone} className="flex items-center gap-2">
                 <div>
                   <FaPhone className="inline-block text-teal-500 mx-2" />{" "}
                   <a href={`tel:${phone}`}>{phone}</a>
