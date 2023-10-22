@@ -3,11 +3,13 @@ import Axios from "@/axios/Axios";
 import SelectWithSearch from "@/components/ui/SelectWithSearch";
 import SelectWithSearchMulti from "@/components/ui/SelectWithSearchMulti";
 import { useLocale } from "next-intl";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
 export default function SearchSeaction() {
   const locale = useLocale();
+  const router = useRouter();
   const [searchInput, setSearchInput] = useState({
     name: "",
     speciality: "",
@@ -44,6 +46,11 @@ export default function SearchSeaction() {
     setSearchInput((prev) => {
       return { ...prev, [name]: value };
     });
+  };
+
+  const handeSearchSubmit = () => {
+    const searchQuery = new URLSearchParams(searchInput).toString();
+    router.push(`/doctors?${searchQuery}`);
   };
 
   const experienceOptions = [
@@ -131,6 +138,7 @@ export default function SearchSeaction() {
           <div className="w-full col-span-1 md:col-span-2 lg:col-span-1">
             <button
               type="button"
+              onClick={handeSearchSubmit}
               className="flex items-center justify-center gap-1 w-full text-center px-2 h-[38px] rounded border border-primary text-white bg-primary hover:shadow-md hover:shadow-primary/50 focus:outline focus:outline-primary/50 transition-all duration-250"
             >
               <FaSearch className="inline" /> Search
